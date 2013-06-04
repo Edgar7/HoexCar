@@ -19,7 +19,4 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	
-
-
 }
