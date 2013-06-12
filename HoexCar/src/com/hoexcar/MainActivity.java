@@ -1,8 +1,12 @@
 package com.hoexcar;
 
+import com.hoexcar.navigation.GoogleMaps;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -19,4 +23,15 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	/*
+	 * Hier werden die Buttons ausgewertet.
+	 */
+	public void OnClick(View view) {
+		switch (view.getId()) {
+			// Navigation Activity
+			case R.id.bNav:
+			startActivity(new Intent(this, GoogleMaps.class));
+		break;
+		}
+	}
 }

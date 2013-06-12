@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <Button
+        android:id="@+id/bStandortAktuell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/map"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="18dp"
+        android:onClick="onClick"
+        android:text="Aktueller Standort" />
+
+    <Button
+        android:id="@+id/bStandortZentrale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bStandortAktuell"
+        android:layout_alignBottom="@+id/bStandortAktuell"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/bStandortAktuell"
+        android:onClick="onClick"
+        android:text="Höxcar Zentrale" />
+
+</RelativeLayout>
